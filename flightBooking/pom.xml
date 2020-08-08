@@ -67,8 +67,11 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.0</version>
 				<configuration>
-					<parallel>classes</parallel>
-					<useUnlimitedThreads>true</useUnlimitedThreads>
+					<includes>
+						<include>RunnerTest.java</include>
+					</includes>
+					<parallel>classesAndMethods</parallel>
+					<threadCount>2</threadCount>
 				</configuration>
 			</plugin>
 		</plugins>
