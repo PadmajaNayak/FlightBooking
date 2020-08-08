@@ -6,6 +6,7 @@ Feature: Booking best flight ticket
     And I select "Hyderabad (HYD)" as destination
     When I get the fares
     Then I should be able to select the best itinerary
+    And I close the browser
 
     Examples: 
       | browser |

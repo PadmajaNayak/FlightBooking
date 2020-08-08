@@ -40,4 +40,9 @@ public class StepDef {
 	public void i_should_be_able_to_select_the_best_itinerary() {
 		bookingPage.getBestFare();
 	}
+	
+	@And("I close the browser")
+	public void i_close_the_browser() {
+		driver.quit();
+	}
 }
